@@ -50,14 +50,14 @@ DATABASES = {
 }
 ```
 
-### Mac에서 mysql 준비
+### Mac에서 mysql, mysqlclient 설치
 * mysql 설치: `brew install mysql`
 * mysql client 설치 (Mac에서 원래 그냥 pip 설치하면 되었는데 버그로 인하여 openssl을 이용해야한다고 함)
     * `brew install openssl`
     * `cd ~/workspace/django`
     * `LDFLAGS=-L/usr/local/opt/openssl/lib pip install mysqlclient`
 
-### Windows 에서 mysqlclient 설치 안될때
+### Windows 에서 mysqlclient 설치
 * [링크 이동](https://www.lfd.uci.edu/~gohlke/pythonlibs/#mysqlclient) 에서 자신의 파이썬버전과 cpu 에 맞게 파일 다운로드
 * 다운받은 파일로 설치 Ex. `pip install /d/workspace/django/mysqlclient-1.4.6-cp37-cp37m-win32.whl`
 
