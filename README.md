@@ -5,16 +5,26 @@
 * django 3.0.3
 * mysql 8.x
 
-### 가상화
+### 가상화 (Mac)
 작업 공간으로 이동: `cd ~/workspace/django`
 가상화 생성: `python -m venv .venv`
 가상화 실행: `. .venv/bin/activate`
+가상화 종료: `deactivate`
+
+### 가상화 (Windows) git bash 이용
+작업 공간으로 이동: `cd ~/workspace/django`
+가상화 생성: `python -m venv .venv`
+가상화 실행: `. .venv/Scripts/activate`
 가상화 종료: `deactivate`
 
 ### package 설치
 pip 업그레이드: `python -m pip install --upgrade pip`
 django 설치: `pip install django`
 django 설치(특정 버전): `pip install django~=2.0.0`
+
+### pip requirements.txt
+* requirements.txt 설치: `pip install -r requirements.txt`
+* requirements.txt 배포: `pip freeze > requirements.txt`
 
 ### 장고 기본 설정 구성
 기본 설정 구성: `django-admin startproject mysite .`
@@ -47,10 +57,10 @@ DATABASES = {
     * `cd ~/workspace/django`
     * `LDFLAGS=-L/usr/local/opt/openssl/lib pip install mysqlclient`
 
+### Windows 에서 mysqlclient 설치 안될때
+* [링크 이동](https://www.lfd.uci.edu/~gohlke/pythonlibs/#mysqlclient) 에서 자신의 파이썬버전과 cpu 에 맞게 파일 다운로드
+* 다운받은 파일로 설치 Ex. `pip install /d/workspace/django/mysqlclient-1.4.6-cp37-cp37m-win32.whl`
 
 ### django run ~
 * migrate: `python manage.py migrate`
 * run: `python manage.py runserver`
-
-
-
