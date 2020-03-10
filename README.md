@@ -18,9 +18,9 @@
 4. 가상화 종료: `deactivate`
 
 ### package 설치
-pip 업그레이드: `python -m pip install --upgrade pip`
-django 설치: `pip install django`
-django 설치(특정 버전): `pip install django~=2.0.0`
+* pip 업그레이드: `python -m pip install --upgrade pip`
+* django 설치: `pip install django`
+* django 설치(특정 버전): `pip install django~=2.0.0`
 
 ### pip requirements.txt
 * requirements.txt 설치: `pip install -r requirements.txt`
