@@ -6,16 +6,16 @@
 * mysql 8.x
 
 ### 가상화 (Mac)
-작업 공간으로 이동: `cd ~/workspace/django`
-가상화 생성: `python -m venv .venv`
-가상화 실행: `. .venv/bin/activate`
-가상화 종료: `deactivate`
+1. 작업 공간으로 이동: `cd ~/workspace/django`
+2. 가상화 생성: `python -m venv .venv`
+3. 가상화 실행: `. .venv/bin/activate`
+4. 가상화 종료: `deactivate`
 
 ### 가상화 (Windows) git bash 이용
-작업 공간으로 이동: `cd ~/workspace/django`
-가상화 생성: `python -m venv .venv`
-가상화 실행: `. .venv/Scripts/activate`
-가상화 종료: `deactivate`
+1. 작업 공간으로 이동: `cd ~/workspace/django`
+2. 가상화 생성: `python -m venv .venv`
+3. 가상화 실행: `. .venv/Scripts/activate`
+4. 가상화 종료: `deactivate`
 
 ### package 설치
 pip 업그레이드: `python -m pip install --upgrade pip`
