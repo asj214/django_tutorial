@@ -1,5 +1,15 @@
-from django.shortcuts import render
+from django.views.generic import ListView, FormView, DetailView
+from .models import Post
 
-# Create your views here.
-def post_list(request):
-    return render(request, 'blog/post_list.html', {})
+
+class IndexView(ListView):
+    template_name = 'blog/post_list.html'
+    context_object_name = 'posts'
+
+    def get_queryset(self):
+        return Post.objects.all()
+
+
+class CreateView(FormView):
+    template_name = 'blog/post_form.html'
+    context_object_name = 'posts'
