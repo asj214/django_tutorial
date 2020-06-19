@@ -1,6 +1,6 @@
-from django.views.generic import ListView, FormView, DetailView
+from django.views.generic import ListView, CreateView, DetailView
 from .models import Post
-
+# from .forms import PostForm
 
 class IndexView(ListView):
     template_name = 'blog/post_list.html'
@@ -10,6 +10,6 @@ class IndexView(ListView):
         return Post.objects.all()
 
 
-class CreateView(FormView):
+class PostFormView(CreateView):
     template_name = 'blog/post_form.html'
-    context_object_name = 'posts'
+    # form_class = PostForm
